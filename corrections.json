@@ -134,6 +134,16 @@
   "updated_at": "2026-09-25T11:59:39+00:00",
   "updated_by": "EditaMatevosyan"
  },
+ "v3-n2": {
+  "fields": {
+   "transcription": "ՄԱՏԱՆԻ/ ԷՐ ԱՆԱԿՆ Ե/ԴԻՐ ՍՈՓԻ Ս/ՒՆԵԱՑ ՏԻԿԻ/Ն..."
+  },
+  "id": "v3-n2",
+  "review_status": "reviewed",
+  "source_issue": 13,
+  "updated_at": "2026-09-25T16:25:40+00:00",
+  "updated_by": "EditaMatevosyan"
+ },
  "v3-n3": {
   "crop": {
    "box": [
