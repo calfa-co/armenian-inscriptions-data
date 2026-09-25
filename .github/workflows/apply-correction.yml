@@ -59,7 +59,7 @@ jobs:
         run: |
           git config user.name  "inscriptions-bot"
           git config user.email "actions@github.com"
-          git add corrections/
+          git add corrections/ corrections.json
           git commit -F - <<EOF
           $SUMMARY
 

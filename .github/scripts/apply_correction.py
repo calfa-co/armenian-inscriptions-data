@@ -143,6 +143,17 @@ def main() -> int:
     path.write_text(json.dumps(rec, ensure_ascii=False, indent=1, sort_keys=True) + "\n",
                     encoding="utf-8")
 
+    # One aggregate beside the per-notice files. The per-notice layout is what
+    # keeps two reviewers from conflicting, but a browser cannot fetch 7592
+    # little files - so the site reads this one and sees a correction the moment
+    # it is applied, instead of waiting for someone to redeploy the site.
+    agg = {}
+    for f in sorted((Path("corrections")).glob("*.json")):
+        agg[f.stem] = json.loads(f.read_text(encoding="utf-8"))
+    Path("corrections.json").write_text(
+        json.dumps(agg, ensure_ascii=False, indent=1, sort_keys=True) + "\n",
+        encoding="utf-8")
+
     what = ", ".join(sorted(fields)) + (", crop" if crop else "")
     out(changed="true",
         summary=f"correction: {nid} ({what})",
