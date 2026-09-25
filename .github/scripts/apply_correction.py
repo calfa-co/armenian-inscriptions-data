@@ -32,6 +32,7 @@ FENCE = re.compile(r"```(?:json)?\s*(.*?)```", re.S)
 EDITABLE = {"monument", "reference", "description", "transcription",
             "nb_lignes", "note", "page", "numero"}
 STATUSES = {"unreviewed", "reviewed", "needs_attention"}
+CROP_STATUSES = {"unreviewed", "accepted", "corrected", "rejected"}
 MAX_FIELD = 20000
 
 # Diplomatic notation is the point of the corpus. A correction that leaves a
@@ -123,7 +124,14 @@ def main() -> int:
     if status is not None and status not in STATUSES:
         fail(f"`review_status` must be one of {', '.join(sorted(STATUSES))}.")
 
-    if not fields and crop is None and status is None:
+    # A crop judgement is a correction in its own right: confirming the
+    # detector's box, or rejecting it as having no usable facsimile, is a human
+    # decision about the record and belongs in the data like any other.
+    crop_status = payload.get("crop_status")
+    if crop_status is not None and crop_status not in CROP_STATUSES:
+        fail(f"`crop_status` must be one of {', '.join(sorted(CROP_STATUSES))}.")
+
+    if not fields and crop is None and status is None and crop_status is None:
         fail("the correction is empty.")
 
     # Merge onto whatever is already recorded, so two issues touching different
@@ -134,7 +142,11 @@ def main() -> int:
     rec.setdefault("fields", {}).update(fields)
     if crop is not None:
         rec["crop"] = crop
-        rec["crop_status"] = "corrected"
+        rec.setdefault("crop_status", "corrected")
+    if crop_status:
+        rec["crop_status"] = crop_status
+        if crop_status in ("rejected", "unreviewed"):
+            rec.pop("crop", None)
     if status:
         rec["review_status"] = status
     rec["updated_at"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
@@ -154,7 +166,11 @@ def main() -> int:
         json.dumps(agg, ensure_ascii=False, indent=1, sort_keys=True) + "\n",
         encoding="utf-8")
 
-    what = ", ".join(sorted(fields)) + (", crop" if crop else "")
+    what = ", ".join([*sorted(fields),
+                      *(["crop"] if crop else []),
+                      *([f"crop {crop_status}"] if crop_status else []),
+                      *([f"marked {status}"] if status else [])]) or "review"
+
     out(changed="true",
         summary=f"correction: {nid} ({what})",
         message=f":white_check_mark: Applied to `corrections/{nid}.json` - **{what}**, "
