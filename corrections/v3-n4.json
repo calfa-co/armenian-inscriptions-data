@@ -1,0 +1,20 @@
+{
+ "crop": {
+  "box": [
+   1847,
+   2429,
+   2480,
+   2663
+  ],
+  "page": "CatInsc_3_000016"
+ },
+ "crop_status": "corrected",
+ "fields": {
+  "transcription": "... ԻՇԽԱՆԻ Ս⎡ԻՒՆԵԱՑ⎤ ..."
+ },
+ "id": "v3-n4",
+ "review_status": "reviewed",
+ "source_issue": 14,
+ "updated_at": "2026-09-25T16:27:19+00:00",
+ "updated_by": "EditaMatevosyan"
+}
