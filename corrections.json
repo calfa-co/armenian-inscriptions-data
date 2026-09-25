@@ -307,6 +307,26 @@
   "updated_at": "2026-09-25T16:59:58+00:00",
   "updated_by": "EditaMatevosyan"
  },
+ "v5-n9": {
+  "crop": {
+   "box": [
+    1853,
+    3250,
+    2110,
+    3729
+   ],
+   "page": "CatInsc_5_000016"
+  },
+  "crop_status": "corrected",
+  "fields": {
+   "transcription": "... ԱՋԻ ...\n... ԱՅ ...\n... ։ՁԸ"
+  },
+  "id": "v5-n9",
+  "review_status": "reviewed",
+  "source_issue": 27,
+  "updated_at": "2026-09-25T17:01:57+00:00",
+  "updated_by": "EditaMatevosyan"
+ },
  "v6-n2": {
   "fields": {
    "transcription": "ՅԱՆՈՒՆ ԱՅ, ԱՅՍ ՄԵՐ ԳԻՐ\nԷ ՇԵՐԱՆՇԱՀԻ, ՈՐ ԳՆԵՑԻ\n/ԶԱՐՁՈՑ ԿՐԱՅ ... ⎡ԵՒ\nԵՏՈՒ⎤ ՎԱՆԱՑ ԱԾ/ԱԾՆԻՆ,\nՎ⎡Ա⎤ Ս⎡Ն⎤ ԻՄ ... ⎡ՀԱՅ⎤ՐԱՊԵՏԻ/Ն ԵՒ ՆԱ ԵՏ ։Բ։ ԺԱՄ\n... ⎡ՈՎ⎤ ՅԱՅՍ\nՎԱՆԱ/ՑՍ ՀԱՆԵԼ ՋԱՆԱ,\n։ՅԺԸ։ ՀԱՅՐԱՊԵՏԱՑՆ ԵՒ ԸՆԴ\nՅՈՒԴԱ/Ի ԵՂԻՑԻ։ ԱՄԷՆ"

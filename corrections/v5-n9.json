@@ -1,0 +1,20 @@
+{
+ "crop": {
+  "box": [
+   1853,
+   3250,
+   2110,
+   3729
+  ],
+  "page": "CatInsc_5_000016"
+ },
+ "crop_status": "corrected",
+ "fields": {
+  "transcription": "... ԱՋԻ ...\n... ԱՅ ...\n... ։ՁԸ"
+ },
+ "id": "v5-n9",
+ "review_status": "reviewed",
+ "source_issue": 27,
+ "updated_at": "2026-09-25T17:01:57+00:00",
+ "updated_by": "EditaMatevosyan"
+}
