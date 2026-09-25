@@ -309,5 +309,16 @@
   "source_issue": 20,
   "updated_at": "2026-09-25T16:45:41+00:00",
   "updated_by": "EditaMatevosyan"
+ },
+ "v9-n2": {
+  "crop_status": "accepted",
+  "fields": {
+   "transcription": "Թ⎣ՎԻՆ⎦ Հ⎣ԱՅՈՑ⎦ ՌՅԼԵ (1888) ԿԱՄՐՋԻՍ ՁԱԽԱԿՈՂՄԵ ⎣Ա⎦Ն ԽԱԽՏԵԼ ՀԻՄՔՆ ԵՒ ՈՐՄՈՒՆՔՆ ՎԵՐՍՏԻՆ ՆՈՐ⎡ՈԳ⎤ԵՑԱՆ ԻՍԿ⎡Ա⎤ԿԱՆ ԱՐԴԵ⎡Ա⎤ՄԲ Ս⎣Ա⎦Ն⎣Ա⎦ՀՆԵՑԻ\nԹԱԴԵՈՍ Ք⎣Ա⎦Հ⎣Ա⎦Ն⎣Ա⎦ՅԻ ԵՐՈՒՍԱՂԵՄՑ Ի Յ⎣Ի⎦Շ⎣Ա⎦Տ⎣Ա⎦Կ ԻՒՐ ԾՆ⎣Ո⎦Ղ⎣ԱՑ⎦"
+  },
+  "id": "v9-n2",
+  "review_status": "reviewed",
+  "source_issue": 21,
+  "updated_at": "2026-09-25T16:48:05+00:00",
+  "updated_by": "EditaMatevosyan"
  }
 }
