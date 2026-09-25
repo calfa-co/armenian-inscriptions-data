@@ -1,0 +1,20 @@
+{
+ "crop": {
+  "box": [
+   433,
+   423,
+   673,
+   704
+  ],
+  "page": "CatInsc_1_000046"
+ },
+ "crop_status": "corrected",
+ "fields": {
+  "transcription": "...ՈՆԱՆ...\n...ՑՈՅՍ...\n...ՍԱ..."
+ },
+ "id": "v1-n40",
+ "review_status": "reviewed",
+ "source_issue": 23,
+ "updated_at": "2026-09-25T16:56:40+00:00",
+ "updated_by": "EditaMatevosyan"
+}
