@@ -107,13 +107,23 @@
   "updated_by": "pre-github"
  },
  "v2-n2": {
+  "crop": {
+   "box": [
+    374,
+    2516,
+    1068,
+    3167
+   ],
+   "page": "CatInsc_2_000014"
+  },
+  "crop_status": "accepted",
   "fields": {
    "transcription": "ՀՐԱՄԱՆԱՒ ԱԾԱՊԱՀ/ ՏԵՐԱՆՑ ԵՒ ՅԱՒԺԱՐՈՒ/ԹԵԱՆԲ ԻՄՈՑ ԿՐԱՒՆ/ԱՒՈՐԱՑ ԵՒ\nԻՆՈՅՆ ՏԱ/ՐԻՈՋ Ի ՅԵՒԹՆԵՐՈՐԴ/ ԱՄՍՈՑՍ\nՅԱՐԱՑ ԿԱ/ՆԿՆԵՑԱՒ ԱՐՁԱՆՍ"
   },
   "id": "v2-n2",
   "review_status": "reviewed",
-  "source_issue": 16,
-  "updated_at": "2026-09-25T16:39:06+00:00",
+  "source_issue": 17,
+  "updated_at": "2026-09-25T16:42:10+00:00",
   "updated_by": "EditaMatevosyan"
  },
  "v2-n5": {
