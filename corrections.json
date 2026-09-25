@@ -79,11 +79,13 @@
   "updated_by": "pre-github"
  },
  "v2-n1": {
-  "fields": {},
+  "fields": {
+   "transcription": "ՅԱՄԻՆ ՅՈՐՈՒՄ ԹՈՒԱԿԱՆՆ ՀԱՅՈՑ ։ՅԽԴ։\nԷՐ, ԵՒ ԶԱՏԻԿՆ Ի ՆԱՒԱՍԱՐԴԻ Ի։ Դ։. ԵՍ\nՏԷՐ ՅՈՎՀԱՆՆԷՍ ՈՐ ԵՐԿՐՈՐԴ ԿԱՐԳԵՑԱՅ\nԵՊԻՍԿՈՊՈՍ ՍԻՒՆԵԱՑ ԶԿՆԻ ՏԵԱՌՆ ՍԱՂԱՄԻԱՆԻ, ԱՐԱՐԻ ՍԿԻԶԲՆ ՇԻՆՈՒԱԾՈՑ\nԵԿԵՂԵՑԻՈՅՍ¹"
+  },
   "id": "v2-n1",
   "review_status": "reviewed",
-  "source_issue": 6,
-  "updated_at": "2026-09-25T16:06:35+00:00",
+  "source_issue": 7,
+  "updated_at": "2026-09-25T16:09:42+00:00",
   "updated_by": "EditaMatevosyan"
  },
  "v2-n14": {
