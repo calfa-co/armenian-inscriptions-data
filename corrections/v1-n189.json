@@ -1,0 +1,17 @@
+{
+ "crop": {
+  "box": [
+   448,
+   255,
+   1272,
+   1068
+  ],
+  "page": "CatInsc_1_000099"
+ },
+ "crop_status": "corrected",
+ "fields": {},
+ "id": "v1-n189",
+ "source_issue": 3,
+ "updated_at": "2026-09-25T15:25:19+00:00",
+ "updated_by": "EditaMatevosyan"
+}
