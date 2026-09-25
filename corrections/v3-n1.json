@@ -9,9 +9,12 @@
   "page": "CatInsc_3_000015"
  },
  "crop_status": "accepted",
- "fields": {},
+ "fields": {
+  "transcription": "ԵՍ ՍՈՓԻ ՍԻՒՆԵԱՑ ՏԻ/ԿԻՆ, ԴԵՐԱՆԿԻՆ [Կ]\nԴՈՒՍ/ՏՐ, ԿԻՆ ՍՄԲԱՏԱ, ՈՐԴԻ/ ԱՇՈՏԻ ՍԻՒՆԵԱՑ\nԻՇԽԱՆ/Ի, ՇԻՆԵՑԻ ԶԵԿԵՂԵՑԻՍ..."
+ },
  "id": "v3-n1",
- "review_status": "unreviewed",
- "updated_at": "2026-09-21T10:54:27+00:00",
- "updated_by": "pre-github"
+ "review_status": "reviewed",
+ "source_issue": 1,
+ "updated_at": "2026-09-25T11:59:39+00:00",
+ "updated_by": "EditaMatevosyan"
 }
