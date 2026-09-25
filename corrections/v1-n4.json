@@ -1,0 +1,17 @@
+{
+ "crop": {
+  "box": [
+   459,
+   1193,
+   1473,
+   1813
+  ],
+  "page": "CatInsc_1_000037"
+ },
+ "crop_status": "accepted",
+ "fields": {},
+ "id": "v1-n4",
+ "review_status": "unreviewed",
+ "updated_at": "2026-09-21T07:08:33+00:00",
+ "updated_by": "pre-github"
+}

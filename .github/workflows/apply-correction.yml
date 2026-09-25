@@ -1,0 +1,101 @@
+# Goes in the DATA repository as .github/workflows/apply-correction.yml
+#
+# A reader corrects a notice in the proofreading interface. The interface opens
+# a pre-filled issue against this repository; GitHub makes them sign in or sign
+# up, so their identity is real and we maintain no accounts. This workflow then
+# turns the issue into a commit.
+#
+# Why an issue rather than the API: a token that can write to this repository
+# would have to live somewhere the browser can reach it. It does not exist here
+# - GITHUB_TOKEN is minted per run, and the only person who can start a run is
+# someone who signed in to GitHub and filed an issue.
+#
+# The workflow REFUSES rather than guesses. A body it cannot parse, an unknown
+# notice, an unknown field, a bad crop box: it says so on the issue and stops.
+# A wrong commit to the corpus is far more expensive than a rejected issue.
+name: apply correction
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  apply:
+    # Gated on the MARKER IN THE BODY, never on a label. GitHub silently drops
+    # `labels=` from a pre-filled issue URL unless the author has write or
+    # triage permission on the repository - so a label gate would work when a
+    # maintainer tests it and fail for every outside contributor, which is the
+    # only audience that matters here. The workflow applies the label itself.
+    if: contains(github.event.issue.body, '<!-- correction:begin -->')
+    runs-on: ubuntu-latest
+    # One run at a time: two issues applied in parallel would race on the same
+    # branch and one commit would be lost.
+    concurrency: apply-correction
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Apply the correction
+        id: apply
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_USER: ${{ github.event.issue.user.login }}
+          ISSUE_NUM: ${{ github.event.issue.number }}
+        run: python3 .github/scripts/apply_correction.py
+
+      - name: Commit
+        if: steps.apply.outputs.changed == 'true'
+        # Everything reaches git through the environment rather than through
+        # ${{ }} interpolation into the shell: an issue body is written by the
+        # public and must never be able to become a command.
+        env:
+          SUMMARY: ${{ steps.apply.outputs.summary }}
+          ISSUE_NUM: ${{ github.event.issue.number }}
+          LOGIN: ${{ github.event.issue.user.login }}
+          UID: ${{ github.event.issue.user.id }}
+        run: |
+          git config user.name  "inscriptions-bot"
+          git config user.email "actions@github.com"
+          git add corrections/
+          git commit -F - <<EOF
+          $SUMMARY
+
+          Closes #$ISSUE_NUM
+
+          Co-authored-by: $LOGIN <$UID+$LOGIN@users.noreply.github.com>
+          EOF
+          git push
+
+      - name: Report back on the issue
+        if: always()
+        uses: actions/github-script@v7
+        env:
+          CHANGED: ${{ steps.apply.outputs.changed }}
+          MESSAGE: ${{ steps.apply.outputs.message }}
+        with:
+          script: |
+            const ok = process.env.CHANGED === 'true';
+            const msg = process.env.MESSAGE ||
+              'The correction block could not be read. Nothing was changed.';
+            // The interface cannot set this label (GitHub drops `labels=` for
+            // anyone without triage rights), so the workflow sets it - which
+            // also makes every correction issue filterable after the fact.
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner, repo: context.repo.repo,
+              issue_number: context.issue.number, labels: ['correction'] })
+              .catch(() => {});
+            await github.rest.issues.createComment({
+              owner: context.repo.owner, repo: context.repo.repo,
+              issue_number: context.issue.number, body: msg });
+            if (ok) {
+              await github.rest.issues.update({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: context.issue.number, state: 'closed' });
+            } else {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: context.issue.number, labels: ['needs-review'] });
+            }

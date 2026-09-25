@@ -1,0 +1,10 @@
+# Corrections must arrive in the machine-readable form the workflow can apply,
+# so freehand issues are steered back to the interface that produces it.
+blank_issues_enabled: true
+contact_links:
+  - name: Correct an inscription notice
+    url: https://calfa-co.github.io/armenian-inscriptions-website/
+    about: >-
+      Open the proofreading interface, find the notice, edit it, and press
+      "Propose this notice on GitHub". The correction is filed here as an issue
+      and applied automatically.

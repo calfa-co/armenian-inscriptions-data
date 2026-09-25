@@ -1,0 +1,19 @@
+{
+ "crop": {
+  "box": [
+   1659,
+   4341,
+   2233,
+   4806
+  ],
+  "page": "CatInsc_3_000015"
+ },
+ "crop_status": "accepted",
+ "fields": {
+  "transcription": "...ԱՆԱԿՆ/ ...ԱԿՆ ԵԴԻ⎡Ր /ՍՈՓԻ ՍԻ ⎤ՒՆԵԱՑ\nՏԻ⎡ԿԻՆ⎤ ... ԱՒՈՐԵ..."
+ },
+ "id": "v3-n3",
+ "review_status": "unreviewed",
+ "updated_at": "2026-09-25T11:03:31+00:00",
+ "updated_by": "pre-github"
+}
