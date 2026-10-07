@@ -16,6 +16,26 @@
   "updated_at": "2026-09-21T07:23:51+00:00",
   "updated_by": "pre-github"
  },
+ "v1-n13": {
+  "crop": {
+   "box": [
+    488,
+    455,
+    1351,
+    588
+   ],
+   "page": "CatInsc_1_000041"
+  },
+  "crop_status": "accepted",
+  "fields": {
+   "nb_lignes": "1"
+  },
+  "id": "v1-n13",
+  "review_status": "reviewed",
+  "source_issue": 30,
+  "updated_at": "2026-10-07T11:08:05+00:00",
+  "updated_by": "CVidalG"
+ },
  "v1-n155": {
   "crop": {
    "box": [
