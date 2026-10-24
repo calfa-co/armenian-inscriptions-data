@@ -1,14 +1,14 @@
 {
  "crop": {
   "box": [
-   1744,
-   4218,
+   1751,
+   4215,
    2410,
-   4654
+   4861
   ],
   "page": "CatInsc_5_000014"
  },
- "crop_status": "accepted",
+ "crop_status": "corrected",
  "fields": {
   "note": "Ծանոթ. Հրատարակիչը խաչի շուրջը եղած տողերի սխալ վերծանման շնորհիվ երկու անձնանուններն էլ աղավաղել է:",
   "reference": "Հրատ. Դադեան, 140",
@@ -16,7 +16,7 @@
  },
  "id": "v5-n3",
  "review_status": "reviewed",
- "source_issue": 35,
- "updated_at": "2026-10-13T12:11:07+00:00",
+ "source_issue": 44,
+ "updated_at": "2026-10-24T12:00:32+00:00",
  "updated_by": "AADH2022"
 }
