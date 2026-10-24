@@ -488,6 +488,23 @@
   "updated_at": "2026-10-22T12:29:23+00:00",
   "updated_by": "AADH2022"
  },
+ "v5-n7": {
+  "crop": {
+   "box": [
+    1804,
+    4727,
+    2195,
+    4875
+   ],
+   "page": "CatInsc_5_000015"
+  },
+  "crop_status": "corrected",
+  "fields": {},
+  "id": "v5-n7",
+  "source_issue": 43,
+  "updated_at": "2026-10-24T11:58:42+00:00",
+  "updated_by": "AADH2022"
+ },
  "v5-n9": {
   "crop": {
    "box": [
