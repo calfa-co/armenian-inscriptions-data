@@ -10,12 +10,13 @@
  },
  "crop_status": "corrected",
  "fields": {
+  "description": "ներքև մի քարի վրա, բոլոր կողմերից ջարդոտված, 3 տողի մնացորդ.",
   "reference": "Հրատ. Դադեան, 144,\nԼուսանկ. 2",
   "transcription": "... ԱՋԻ ...\n... ԱՅ ...\n... ։ՁԸ"
  },
  "id": "v5-n9",
  "review_status": "reviewed",
- "source_issue": 46,
- "updated_at": "2026-10-24T12:12:25+00:00",
+ "source_issue": 47,
+ "updated_at": "2026-10-24T12:15:22+00:00",
  "updated_by": "AADH2022"
 }
