@@ -533,6 +533,16 @@
   "updated_by": "AADH2022"
  },
  "v5-n20": {
+  "crop": {
+   "box": [
+    1879,
+    2351,
+    2558,
+    2810
+   ],
+   "page": "CatInsc_5_000020"
+  },
+  "crop_status": "accepted",
   "fields": {
    "note": "Ծանոթ. Թվականը որոշվում է նախորդով և հաջորդով:",
    "reference": "Հրատ. Ջալալեանց, I, 194։ Դադեան, 138:",
@@ -540,8 +550,8 @@
   },
   "id": "v5-n20",
   "review_status": "reviewed",
-  "source_issue": 57,
-  "updated_at": "2026-11-11T10:43:31+00:00",
+  "source_issue": 59,
+  "updated_at": "2026-11-11T10:44:34+00:00",
   "updated_by": "AADH2022"
  },
  "v5-n3": {
