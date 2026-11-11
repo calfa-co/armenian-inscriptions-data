@@ -1,0 +1,21 @@
+{
+ "crop": {
+  "box": [
+   1866,
+   4572,
+   2681,
+   4796
+  ],
+  "page": "CatInsc_5_000020"
+ },
+ "crop_status": "corrected",
+ "fields": {
+  "reference": "Հրատ. Բարխուդարեանց, 171։ Դադեան, 139:",
+  "transcription": "ԱՅՍ Է ՀԱՆԳԻՍՏ ՍԻՄԷՈՆ Կ⎡Ա⎤Թ⎡Ո⎤Ղ⎡ԻԿՈ⎤Ս/⎡ԻՆ⎤. ԹՎ. ։ՌԿԵ։ (1616)"
+ },
+ "id": "v5-n23",
+ "review_status": "reviewed",
+ "source_issue": 64,
+ "updated_at": "2026-11-11T12:58:07+00:00",
+ "updated_by": "AADH2022"
+}
