@@ -806,6 +806,29 @@
   "updated_at": "2026-11-24T17:38:27+00:00",
   "updated_by": "AADH2022"
  },
+ "v5-n32": {
+  "crop": {
+   "box": [
+    2332,
+    3707,
+    2843,
+    3936
+   ],
+   "page": "CatInsc_5_000023"
+  },
+  "crop_status": "corrected",
+  "fields": {
+   "description": "արևմտյան մասում, նախորդների մոտ, փոքր բեկորի վրա, 3 տող:",
+   "note": "Ծանոթ. Արձանագրության միջին մասն է, իմաստ չի ստացվում:",
+   "reference": "Լուսանկ. 9:",
+   "transcription": "... ԲՄՂՈՒՈ ...\n... ՒՈՎՂԵՍ ...\n... ԱՂԲՈ ..."
+  },
+  "id": "v5-n32",
+  "review_status": "reviewed",
+  "source_issue": 75,
+  "updated_at": "2026-11-24T17:43:23+00:00",
+  "updated_by": "AADH2022"
+ },
  "v5-n4": {
   "crop": {
    "box": [
