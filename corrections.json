@@ -852,6 +852,27 @@
   "updated_at": "2026-11-26T04:56:27+00:00",
   "updated_by": "AADH2022"
  },
+ "v5-n34": {
+  "crop": {
+   "box": [
+    2389,
+    4667,
+    2903,
+    4833
+   ],
+   "page": "CatInsc_5_000023"
+  },
+  "crop_status": "corrected",
+  "fields": {
+   "description": "ընկած մի բեկոր, ամեն կողմից ջարդոտված:",
+   "transcription": "... ՐՇՐԸՆԿԻՏ ...\n... ԽՌԷ ԱՅՍ ..."
+  },
+  "id": "v5-n34",
+  "review_status": "reviewed",
+  "source_issue": 77,
+  "updated_at": "2026-11-26T04:59:05+00:00",
+  "updated_by": "AADH2022"
+ },
  "v5-n4": {
   "crop": {
    "box": [
