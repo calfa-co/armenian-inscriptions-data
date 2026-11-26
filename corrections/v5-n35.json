@@ -1,0 +1,21 @@
+{
+ "crop": {
+  "box": [
+   2414,
+   2295,
+   3079,
+   2576
+  ],
+  "page": "CatInsc_5_000024"
+ },
+ "crop_status": "accepted",
+ "fields": {
+  "description": "ընկած մի բեկոր, ամեն կողմից ջարդոտված:",
+  "transcription": "... Ա. ՐԵԳՐ...\n... ՈՂՆԻՍ ...\n... ԱՓԱՆՄԵՐՏ ..."
+ },
+ "id": "v5-n35",
+ "review_status": "reviewed",
+ "source_issue": 78,
+ "updated_at": "2026-11-26T05:02:07+00:00",
+ "updated_by": "AADH2022"
+}
