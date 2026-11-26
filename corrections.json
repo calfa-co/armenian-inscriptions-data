@@ -894,6 +894,17 @@
   "updated_at": "2026-11-26T05:02:07+00:00",
   "updated_by": "AADH2022"
  },
+ "v5-n36": {
+  "fields": {
+   "description": "գավթի մեջ, տապանաքարի վրա:",
+   "reference": "Հրատ. Բարխուդարեանց, 171, Դադեան, 139:"
+  },
+  "id": "v5-n36",
+  "review_status": "reviewed",
+  "source_issue": 79,
+  "updated_at": "2026-11-26T05:03:35+00:00",
+  "updated_by": "AADH2022"
+ },
  "v5-n4": {
   "crop": {
    "box": [
