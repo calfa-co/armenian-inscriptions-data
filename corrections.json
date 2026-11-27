@@ -1134,14 +1134,14 @@
  "v5-n50": {
   "crop": {
    "box": [
-    2087,
-    4202,
-    3474,
-    4484
+    2086,
+    4207,
+    3475,
+    4422
    ],
    "page": "CatInsc_5_000028"
   },
-  "crop_status": "corrected",
+  "crop_status": "accepted",
   "fields": {
    "description": "դրված է սրահից մեծ եկեղեցին տանող մուտքի հյուսիսային կողին. կողքանց, երեսով արևմուտք. 2 տող:",
    "monument": "ԽԱՉՔԱՐ,",
@@ -1150,8 +1150,8 @@
   },
   "id": "v5-n50",
   "review_status": "reviewed",
-  "source_issue": 100,
-  "updated_at": "2026-11-27T11:10:41+00:00",
+  "source_issue": 101,
+  "updated_at": "2026-11-27T11:13:58+00:00",
   "updated_by": "AADH2022"
  },
  "v5-n6": {
