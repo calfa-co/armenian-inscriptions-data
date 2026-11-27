@@ -1135,9 +1135,9 @@
   "crop": {
    "box": [
     2087,
-    4201,
+    4202,
     3474,
-    4417
+    4484
    ],
    "page": "CatInsc_5_000028"
   },
@@ -1150,8 +1150,8 @@
   },
   "id": "v5-n50",
   "review_status": "reviewed",
-  "source_issue": 99,
-  "updated_at": "2026-11-27T11:07:38+00:00",
+  "source_issue": 100,
+  "updated_at": "2026-11-27T11:10:41+00:00",
   "updated_by": "AADH2022"
  },
  "v5-n6": {
